@@ -1,11 +1,17 @@
-import {Container} from "react-bootstrap";
+import React,{Component} from "react";
+import Container from "../../node_modules/react-bootstrap/Container";
+import GalleryS1 from "../components/gallery-s1";
+import GalleryS2 from "../components/gallery-s2";
 
-function Gallery(){
-    return(
-        <Container fluid className="minh-footer-adj bg-dark d-flex align-items-center py-5">
-            
-        </Container>
-    );
+class Gallery extends Component{
+    render(){
+        return(        
+            <Container fluid className="minh-footer-adj p-0">
+                <GalleryS1/>
+                <GalleryS2/>
+            </Container>    
+        );
+    }
 }
 
 export default Gallery;
